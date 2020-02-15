@@ -1,2 +1,2 @@
 # Akashi-03
-TLV320AIC3204 test board
+Nucleo-G431RB test jig.
