@@ -1,5 +1,5 @@
 
-(rules PCB Akashi-01
+(rules PCB Akashi-03
   (snap_angle 
     fortyfive_degree
   )
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 112)
+    (start_pass_no 223)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,10 +63,15 @@
     )
   )
   (class "kicad_default"
-    GND /LED3 /LED2 /LED4 /LED1 "/SPI1_NSS" "/TIM2_CH2" "/TIM2_CH1"
-    +3V3 "/I2C1_SDA" "/I2C1_SCL" "/SPI1_SCK" "/USART1_CTS" "/SPI1_MISO" "/SPI1_MOSI" "/UART1_TX"
-    /SW1 "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(R6-Pad1)" "Net-(R10-Pad2)" /nLEDCS
-    /nRESET
+    GND /LED3 /LED2 /LED4 /LED1 +3V3 "/I2C1_SDA" "/I2C1_SCL"
+    "/USART1_CTS" /nRESET "Net-(LED1-Pad2)" "/CH2_CTL" "Net-(CN1-Pad33)" "/CH1_CTL" "Net-(CN1-Pad31)" "Net-(CN1-Pad29)"
+    "Net-(CN1-Pad27)" "Net-(CN1-Pad26)" "Net-(CN1-Pad25)" "Net-(CN1-Pad24)" /B1 "Net-(CN1-Pad21)" "Net-(CN1-Pad18)" "/SPI2_NSS"
+    "Net-(CN1-Pad15)" "Net-(CN1-Pad13)" "Net-(CN1-Pad12)" "Net-(CN1-Pad11)" "Net-(CN1-Pad10)" "Net-(CN1-Pad9)" "Net-(CN1-Pad7)" "Net-(CN1-Pad6)"
+    "Net-(CN1-Pad5)" "Net-(CN1-Pad4)" "/SPI2_MOSI" "/SPI2_MISO" "/SPI2_SCK" "Net-(CN2-Pad1)" "Net-(CN2-Pad2)" "Net-(CN2-Pad4)"
+    "/USART1_RX" "Net-(CN2-Pad7)" "Net-(CN2-Pad8)" "Net-(CN2-Pad10)" /LD2 "Net-(CN2-Pad13)" "Net-(CN2-Pad15)" "Net-(CN2-Pad18)"
+    "Net-(CN2-Pad19)" "/SAI1_FS_A" "Net-(CN2-Pad22)" "Net-(CN2-Pad24)" "/SAI1_SCK_A" "Net-(CN2-Pad27)" "/SAI1_SD_A" "Net-(CN2-Pad31)"
+    "Net-(CN2-Pad32)" "Net-(CN2-Pad35)" "Net-(CN2-Pad36)" "Net-(CN2-Pad37)" "Net-(CN2-Pad38)" "Net-(LD2-Pad2)" "Net-(LED2-Pad2)" "Net-(LED3-Pad2)"
+    "Net-(LED4-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
